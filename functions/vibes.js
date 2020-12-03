@@ -11,6 +11,8 @@ module.exports = {
 const demonic = 'ḑ̶̨̡̨̨̡̬͔̜͎͚͔̱̥͇̠̩̮̗̫̫̙̫̫̻̭͖̱̺͈̫̔̽̌͂́͑̓̄̔́͒̚͜ȩ̶̡̛͎̠̘̻͓͇̭͔͕̺̜̻̖̲̪̟̬͎̯̣̼̙̤̟̩͕̞̰̯͚͐̆̽̈́͋̽͛̅̎̓̿̇́̿͗͛̑̉̐̀̌͌͛̀̾́̈́̓̐̋͂͊̀̔̓̓̋̈́̓̾̏̕͘̕̕͝͠͠ͅͅm̸̡̧̨̡̛̛͚͓͖͕̙̬̖̥͉̤̰̼̮̝̙̬̲͕͉̘̱̜̖͕̭̻͚̐̉̈͒̇̓̓̎̑̈́̐͌̈́̍̐̈́̋̓̂̄̐͆̽͒̔̆̍̀͛͋͛̐͂͌̊͗̾̚͘͘͝͝͠͠o̸̡̨̢̜̥̰̻͇̲̦̭̺̘̞̟̬͍̯̹̫͒̉͋̇͂̏̃̓̈̓̌̎̒̌̉́̿̀̚̚͝ņ̵̨̱͚͙͉̥̳̞͓̩̲̦͎͎͍̣̟̥͍͚̼̤̯͈̀̿̂̕̕̕͜ȋ̵̢̛̛̛̥̜̗̣̪͔̠̺̣̝̪̞̐͒̄́̃̓͌̄̐̋̀͛͆̐͗͑̌̔̈́́̾̄̀̐͒́̏̔̓̎͋̃̋͌̀̚̚̕̕͘͠c̸̢̡̢̢̰͖̫̖͔̞͍̞̣̻̜͈̣͉̤̞̲̳̜͚͚̒̀́̔̌̈́͐̄̑̐̎̋̐̓͋̆̋̓͊̕͝'
 
 const enhancers = [
+    'alarmingly',
+    'moistly',
     'kinda',
     'really',
     'very',
@@ -36,6 +38,7 @@ const verbs = [
     'anxious',
     'alone',
     'BETRAYED',
+    'barren',
     'brave',
     'bodacious',
     'benevolent',
@@ -44,6 +47,7 @@ const verbs = [
     'cursed',
     'creative',
     'dank',
+    'dry',
     'dejected',
     'delighted!',
     'depressed',
@@ -77,6 +81,7 @@ const verbs = [
     'spicy',
     'straight',
     'sad',
+    'squeezed',
     'serene',
     'slutty',
     'smitten',
@@ -84,6 +89,7 @@ const verbs = [
     'successful',
     'tender',
     'tired',
+    'tight',
     'tsundere',
     'upset',
     'understanding',
