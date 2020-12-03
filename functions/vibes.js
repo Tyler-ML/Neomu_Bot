@@ -2,7 +2,7 @@ module.exports = {
     send_vibe: function (message){
         adjective = enhancers[Math.floor(Math.random() * enhancers.length)];
         verb = verbs[Math.floor(Math.random() * verbs.length)];
-        vibe = message.member.displayName + " is feeling " + adjective + " " + verb;
+        vibe = "<@" + message.author.id + ">" + " is feeling " + adjective + " " + verb;
         message.channel.send(vibe);
         return;
     }
