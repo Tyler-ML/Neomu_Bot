@@ -1,8 +1,12 @@
 module.exports = {
     send_vibe: function (message){
+        let guild = client.guilds.get('serverID');
+        let member = guild.member(message.author);
+        let nickname = member ? member.displayName : null;
+
         adjective = enhancers[Math.floor(Math.random() * enhancers.length)];
         verb = verbs[Math.floor(Math.random() * verbs.length)];
-        vibe = message.member.displayname + "is feeling " + adjective + " " + verb;
+        vibe = nickname + "is feeling " + adjective + " " + verb;
         message.channel.send(vibe);
         return;
     }
