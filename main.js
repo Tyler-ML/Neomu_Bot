@@ -9,7 +9,6 @@ const { Client } = require('discord.js');
 const client = new Client();
 
 const prefix = "#";
-const date = new Date()
 
 const commands = {
     'greet': greet.send_greeting,
@@ -30,6 +29,7 @@ client.on('message', message => {
     if(!message.content.startsWith(prefix)) return;
     
     //Mandated Break
+    const date = new Date()
     if(date.getHours() == 17 && date.getMinutes() < 15){
         message.channel.send("Sorry, I'm on my union mandated break. Talk to me again at 17:15.");
         return;

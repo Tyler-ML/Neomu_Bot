@@ -18,7 +18,7 @@ module.exports = {
         if(message.author.id === users['john']){
             message.channel.send("Try typing #help to receive useful help messages!");
         }else if(message.author.id === users['tyler']){
-            message.delete();
+            message.channel.send("<:smile:>");
             message.channel.send("<@" + message.author.id + ">");
         }else{
             var info = '```md\n';
