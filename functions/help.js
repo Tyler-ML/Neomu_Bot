@@ -5,6 +5,7 @@ const commands = {
     'greet': 'greet the members of the server!',
     'golf': 'gives you the rules for drinking golf :)',
     'nty': 'spams the chat with | to bury awful messages.',
+    'eyes_vibe': 'tells you your eye\'s vibe.',
 }
 
 const users = {

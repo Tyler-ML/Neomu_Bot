@@ -3,6 +3,7 @@ const golf = require('./functions/golf');
 const greet = require('./functions/greetings');
 const nty = require('./functions/nty');
 const help = require('./functions/help');
+const eyes_vibes = require('./functions/eyes_vibes');
 const secret = require('./secret/secret');
 
 const { Client } = require('discord.js');
@@ -16,6 +17,7 @@ const commands = {
     'golf': golf.send_instructions,
     'nty': nty.send_wall,
     'help': help.send_help,
+    'eyes_vibe': eyes_vibes.send_eyes_vibe,
 }
 
 client.on('message', message => {
@@ -45,8 +47,9 @@ client.on('message', message => {
     }
 });
 
-client.once('ready', () => {
+client.once('ready', () => { 
     console.log("Bot Initiated.")
+    client.user.setActivity("with ur heart");
 });
 
 client.login(secret.secret_string);

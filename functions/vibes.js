@@ -1,11 +1,27 @@
 module.exports = {
     send_vibe: function (message){
-        adjective = enhancers[Math.floor(Math.random() * enhancers.length)];
-        verb = verbs[Math.floor(Math.random() * verbs.length)];
-        vibe = "<@" + message.author.id + ">" + " is feeling " + adjective + " " + verb;
-        message.channel.send(vibe);
+        if(Math.random() > 0.90){
+            variant2(message);
+        }else{
+            variant1(message);
+        }
         return;
     }
+}
+
+function variant1(message){
+    adjective = enhancers[Math.floor(Math.random() * enhancers.length)];
+    verb = verbs[Math.floor(Math.random() * verbs.length)];
+    vibe = "<@" + message.author.id + ">" + " is feeling " + adjective + " " + verb;
+    message.channel.send(vibe);
+    return;
+}
+
+function variant2(message){
+    const scenario = scenarios[Math.floor(Math.random() * scenarios.length)];
+    vibe = "<@" + message.author.id + ">" + " is feeling " + scenario;
+    message.channel.send(vibe);
+
 }
 
 const demonic = 'ḑ̶̨̡̨̨̡̬͔̜͎͚͔̱̥͇̠̩̮̗̫̫̙̫̫̻̭͖̱̺͈̫̔̽̌͂́͑̓̄̔́͒̚͜ȩ̶̡̛͎̠̘̻͓͇̭͔͕̺̜̻̖̲̪̟̬͎̯̣̼̙̤̟̩͕̞̰̯͚͐̆̽̈́͋̽͛̅̎̓̿̇́̿͗͛̑̉̐̀̌͌͛̀̾́̈́̓̐̋͂͊̀̔̓̓̋̈́̓̾̏̕͘̕̕͝͠͠ͅͅm̸̡̧̨̡̛̛͚͓͖͕̙̬̖̥͉̤̰̼̮̝̙̬̲͕͉̘̱̜̖͕̭̻͚̐̉̈͒̇̓̓̎̑̈́̐͌̈́̍̐̈́̋̓̂̄̐͆̽͒̔̆̍̀͛͋͛̐͂͌̊͗̾̚͘͘͝͝͠͠o̸̡̨̢̜̥̰̻͇̲̦̭̺̘̞̟̬͍̯̹̫͒̉͋̇͂̏̃̓̈̓̌̎̒̌̉́̿̀̚̚͝ņ̵̨̱͚͙͉̥̳̞͓̩̲̦͎͎͍̣̟̥͍͚̼̤̯͈̀̿̂̕̕̕͜ȋ̵̢̛̛̛̥̜̗̣̪͔̠̺̣̝̪̞̐͒̄́̃̓͌̄̐̋̀͛͆̐͗͑̌̔̈́́̾̄̀̐͒́̏̔̓̎͋̃̋͌̀̚̚̕̕͘͠c̸̢̡̢̢̰͖̫̖͔̞͍̞̣̻̜͈̣͉̤̞̲̳̜͚͚̒̀́̔̌̈́͐̄̑̐̎̋̐̓͋̆̋̓͊̕͝'
@@ -41,6 +57,7 @@ const verbs = [
     'awake',
     'anxious',
     'alone',
+    'absorbant',
     'BETRAYED',
     'barren',
     'brave',
@@ -54,6 +71,7 @@ const verbs = [
     'dry',
     'dejected',
     'delighted!',
+    'dehydrated',
     'depressed',
     'desperate',
     'dumb',
@@ -70,12 +88,14 @@ const verbs = [
     'happy',
     'horny',
     'homicidal',
+    'hyrophobic',
     'heartbroken',
     'hopeless',
     'inspired',
     'jealous',
     'jittery',
     'lonely',
+    'lightheaded and that\'s it',
     'melancholy',
     'malevolant',
     'motivated',
@@ -89,6 +109,8 @@ const verbs = [
     'sad',
     'squeezed',
     'serene',
+    'sentient',
+    'stinky',
     'slutty',
     'smitten',
     'strong',
@@ -105,3 +127,23 @@ const verbs = [
     'yandere',
     'yeah...',
 ]
+
+const scenarios = [
+    "on top of the world!",
+    "under the weather",
+    "like they could really use a nap.",
+    "better than they've felt in many moons tbh",
+    "worse than they've felt in many moons tbh",
+    "like a cool cat",
+    "dank 😎",
+    "like listening to bustin on repeat for 14 hours straight",
+    "higher than a kite",
+    "sticky, but in a good way.",
+    ". (or so I'm told)",
+    "lucky!",
+    "like they're 2 shots from drinking a pound of meth and doing a kickflip over the empire state building",
+    "kinda raNdOm xD uwu",
+    "like a worm in the dirt after it just rained",
+    "smitten thanks to a floating gorgon head",
+    "a desperate longing for some gamergirl bathwater to be injected into their gaming energy mix",
+];
