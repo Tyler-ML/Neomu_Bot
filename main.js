@@ -4,7 +4,9 @@ const greet = require('./functions/greetings');
 const nty = require('./functions/nty');
 const help = require('./functions/help');
 const eyes_vibes = require('./functions/eyes_vibes');
+const experience= require('./functions/experience');
 const secret = require('./secret/secret');
+
 
 const { Client } = require('discord.js');
 const client = new Client();
@@ -43,7 +45,7 @@ client.on('message', message => {
     if(Object.keys(commands).includes(command)){
         commands[command](message);
     }else{
-        console.log("Invalid command: " + command);
+        message.channel.send("Look at you, you absolute buffoon, you complete idiot, that isn't even a command!");
     }
 });
 
@@ -52,4 +54,4 @@ client.once('ready', () => {
     client.user.setActivity("with ur heart");
 });
 
-client.login(secret.secret_string);
+client.login(process.env.DISCORD_TOKEN);

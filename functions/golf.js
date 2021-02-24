@@ -4,4 +4,4 @@ module.exports = {
     }
 }
 
-const golf_rules = "```md\n- 1-4 over par: 1 Drink\n- 5-9 over par: 2 Drink\n- 10+ over par: 3 Drink\n- Everyone is under par: 1 Drink\n- You are under par: Assign a Drink (at least one person is OVER par)\n- On hole 9 you check and John is playing League: 2 Drinks\n- If Rain says \"Cheers Babes\" you have to drink 2 drinks (max 2x per game)```"
+const golf_rules = "```md\n- 1-4 over par: 1 Drink\n- 5-9 over par: 2 Drink\n- 10+ over par: 3 Drink\n- Everyone is under par: 1 Drink\n- You are under par: Assign a Drink (at least one person isn't under par)\n- On hole 9 you check and John is playing League: 2 Drinks\n- If Rain says \"Cheers Babes\" you have to drink (max 2x per game)```"

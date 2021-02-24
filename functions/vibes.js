@@ -1,6 +1,7 @@
+
 module.exports = {
     send_vibe: function (message){
-        if(Math.random() > 0.90){
+        if(Math.random() > 0.96){
             variant2(message);
         }else{
             variant1(message);
@@ -13,6 +14,7 @@ function variant1(message){
     adjective = enhancers[Math.floor(Math.random() * enhancers.length)];
     verb = verbs[Math.floor(Math.random() * verbs.length)];
     vibe = "<@" + message.author.id + ">" + " is feeling " + adjective + " " + verb;
+    vibe = vibe.replace(/\s+/g,' ');
     message.channel.send(vibe);
     return;
 }
@@ -28,6 +30,7 @@ const demonic = 'ḑ̶̨̬͔̜͎͚͔̱̥͇̠̩̮̗̫̫̙̔̽̌͂́͑̓̄̔́͒̚
 
 const enhancers = [
     'alarmingly',
+    'ambitiously',
     'a little',
     'bodaciously',
     'criminally',
@@ -35,6 +38,7 @@ const enhancers = [
     'everything but',
     'extensively',
     'EXTREMELY',
+    'grotesquely',
     'incredibly',
     'indisputably',
     'intimidatingly',
@@ -44,12 +48,15 @@ const enhancers = [
     'not that',
     'physically',
     'really',
+    'ravenously',
     'sexily',
+    'secretly',
     'somewhat',
     'sorta',
     'SUPER',
     'very',
     'weirdly',
+    '',
 ]
 
 const verbs = [
@@ -66,6 +73,7 @@ const verbs = [
     'baby',
     'charmed',
     'cursed',
+    'confused',
     'creative',
     'dank',
     'dry',
@@ -86,9 +94,8 @@ const verbs = [
     'gloomy',
     'heavy',
     'happy',
-    'horny',
     'homicidal',
-    'hyrophobic',
+    'hydrophobic',
     'heartbroken',
     'hopeless',
     'inspired',
@@ -97,13 +104,14 @@ const verbs = [
     'lonely',
     'lightheaded and that\'s it',
     'melancholy',
-    'malevolant',
+    'malevolent',
     'motivated',
     'moist',
     'nauseous',
     'optimistic',
     'prepared',
     'refreshed',
+    'rotund',
     'spicy',
     'straight',
     'sad',
@@ -114,6 +122,7 @@ const verbs = [
     'slutty',
     'smitten',
     'strong',
+    'slimy',
     'successful',
     'tender',
     'tired',
@@ -141,9 +150,20 @@ const scenarios = [
     "sticky, but in a good way.",
     ". (or so I'm told)",
     "lucky!",
+    "they should probably clean their reusable toilet paper soon",
     "like they're 2 shots from drinking a pound of meth and doing a kickflip over the empire state building",
     "kinda raNdOm xD uwu",
     "like a worm in the dirt after it just rained",
     "smitten thanks to a floating gorgon head",
     "a desperate longing for some gamergirl bathwater to be injected into their gaming energy mix",
+    "like their insanity levels are slowly rising...",
+    "eat a potato",
+    "like 12 gnomes with a shared exoskeleton",
+    "like Vienna's father",
+    "empty, there are no more vibes",
+    "_____. Determining emotions is trivial and has been left as an excercise to the reader.",
+    "an overwhelming love for Luna Park.",
+    "verbose and erudite",
+    "swallowed a whole grape, and now their throat feels weird.",
+    "like they wish to be swept away by a strange man in a fur coat to a remote village where they will make passionate dinosaur puppets with a flashlight together for a night, and then never see each other again.",
 ];
