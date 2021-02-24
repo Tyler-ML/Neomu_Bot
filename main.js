@@ -5,7 +5,6 @@ const nty = require('./functions/nty');
 const help = require('./functions/help');
 const eyes_vibes = require('./functions/eyes_vibes');
 const experience= require('./functions/experience');
-const secret = require('./secret/secret');
 
 
 const { Client } = require('discord.js');
