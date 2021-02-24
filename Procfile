@@ -1,1 +1,1 @@
-worker: npm run node main.js
+worker: npm run go
