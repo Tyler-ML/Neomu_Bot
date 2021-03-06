@@ -28,6 +28,7 @@ function get_at_index(vibes, target){
         if(vibes[i][1] > target){
             return vibes[i][0];
         }
+        i++;
     }
     return vibes[0][0];
 }
