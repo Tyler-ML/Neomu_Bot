@@ -27,6 +27,8 @@ function get_at_index(vibes, target){
     while(i < vibes.length){
         if(vibes[i][1] > target){
             return vibes[i][0];
+        }else{
+            target -= vibes[i][1]
         }
         i++;
     }
