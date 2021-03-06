@@ -15,6 +15,7 @@ const vibes = [
 const total_vibes = sumValues(vibes)
 
 function sumValues(list){
+    var sum = 0
     list.forEach((a, b) => {
         sum += a[1]
     })
