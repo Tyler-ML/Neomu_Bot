@@ -8,8 +8,8 @@ module.exports = {
 const vibes = [
     ['Your eyes hurt.', 50],
     ['Your eyes are in pain.', 25],
-    ['Your eyes feel like they\'re bleeding', 24],
-    ['Your eyes feel really good', 1]
+    ['Your eyes feel like they\'re bleeding.', 24],
+    ['Your eyes feel really good.', 1]
 ]
 
 const total_vibes = sumValues(vibes)
