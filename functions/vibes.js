@@ -165,5 +165,12 @@ const scenarios = [
     "an overwhelming love for Luna Park.",
     "verbose and erudite",
     "swallowed a whole grape, and now their throat feels weird.",
+    "dead inside.",
+    "like they need a good **** **** ****!",
+    "a little bit creamy",
+    "in the mood to have some bee milk in their tea.",
+    "less pious than the pope, but more than their local mp.",
+    "like they want to share a twinkie with their three closest friends",
+    "like they need to bleach their hair and change their name to susan",
     "like they wish to be swept away by a strange man in a fur coat to a remote village where they will make passionate dinosaur puppets with a flashlight together for a night, and then never see each other again.",
 ];
