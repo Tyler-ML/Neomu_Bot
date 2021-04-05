@@ -16,7 +16,7 @@ function variant1(message){
     vibe = "<@" + message.author.id + ">" + " is feeling " + adjective + " " + verb;
     vibe = vibe.replace(/\s+/g,' ');
     message.channel.send(vibe);
-    message.delete(1000);
+    message.delete();
     return;
 }
 
