@@ -23,7 +23,8 @@ const commands = {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if(message.channel.id == "855476882186829855") return;
+    if(message.channel.id == "855476882186829855") return
+    if(message.channel.id == "331243505361879042") return
 
     //Sexy Shrek
     if(Math.random() * 100000 == 420){
