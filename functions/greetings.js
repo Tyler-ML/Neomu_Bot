@@ -18,6 +18,7 @@ const responses = [
     'What it do, baby?',
     'Listen up, fives. A ten is speaking',
     'Hello friends and enemies',
-    'What\'s up, Demons? it\'s me, ya boy'
+    'What\'s up, Demons? it\'s me, ya boy',
+    'What\'s poppalackin yo?',
     ]
     
